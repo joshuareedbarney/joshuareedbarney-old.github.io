@@ -1,0 +1,295 @@
+/*
+    This file defines the main css rules for the webpage.
+    Josh Barney
+    CS 1810 Final Project
+    April 19th 2019
+*/
+
+.video
+{
+    /* display: inline; */
+    margin: 1em;
+}
+
+ul.videos
+{
+    /*margin: 5em 50% 5em 30%;*/
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    /*align-items: flex-start;*/
+    display: block;
+    background-color: rgb(255, 193, 143);
+}
+
+/*Top header of each page*/
+header
+{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: left;
+    background-image: url("../img/pines2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-image: url("../img/128-85.jpg");*/
+    /*background-repeat: repeat;*/
+    padding: 1em;
+    color: white;
+}
+
+main, div.homeContainer
+{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 1em;
+    display: flex;
+    justify-content: left;
+    flex-flow: row wrap; 
+}
+
+/*Styling for sections on the home page.*/
+span.about
+{
+    margin: 2em;
+    display: inline;
+    width: 100%;
+    clear: left;
+}
+
+h3
+{
+    font-size: 2em;
+    clear: left;
+}
+
+p
+{
+    padding: .5em;
+    font-size: 1.5em;
+    clear: left;
+    margin-bottom: 1em;
+}
+
+img#mainPhoto
+{
+    width: 40%;
+    max-height: auto;
+    /*object-fit: contain;*/
+    margin-top: 0;
+    /*position: relative;*/
+    float: right;
+}
+
+div.photosContainer
+{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+/*Photos*/
+h2/*.photosHeader*/
+{
+    font-size: 3em;
+    width: 100%;
+    text-align: center;
+}
+
+ul.photos
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+ul.photos li
+{
+    max-width: 30%;
+    padding: 1%;
+    min-width: 20em;
+}
+
+ul.photos li img.photo
+{
+    max-width: 100%;
+    max-height: auto;
+    object-fit: contain;
+    display: inline;
+    cursor: pointer;
+}
+
+body img.bigPhoto
+{
+    width: 100%;
+    max-height: 100%;
+    height: auto;
+    object-fit: contain;
+    z-index: 2;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+
+/* h2
+{
+    font-size: 2em;
+    margin-bottom: 0%;
+    width: 100%;
+    text-align: center;
+} */
+
+/*Elenyi*/
+h1.mainTitle
+{
+    font-size: 4em;
+    font-family: 'Major Mono Display', monospace;
+    margin-bottom: .25em;
+}
+
+/*"Let's All Shine*/
+.subTitle
+{
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: lightgray;
+}
+
+/*Links to other pages*/
+ul.links
+{
+    display: flex;
+    justify-content: right;
+    flex-flow: row wrap;
+    background-color: transparent;
+    float: center;
+    /* text-align: right; */
+    margin-right: 3em;
+}
+
+ul.links li
+{
+    margin-bottom: 1em;
+    margin-top: .5em;
+}
+
+/*Button styling*/
+ul.links li a.button
+{
+    display: inline;
+    margin: .25em;
+}
+
+li a.button, p.otherLinks a
+{
+    font-size: 1em;
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #e9e9e9));
+	background:-moz-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:-webkit-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:-o-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:-ms-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9',GradientType=0);
+	background-color:#f9f9f9;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	/*font-size:15px;*/
+	font-weight:bold;
+	padding:6px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+
+li a.button:hover, p.otherLinks a
+{
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e9e9e9), color-stop(1, #f9f9f9));
+	background:-moz-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:-webkit-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:-o-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:-ms-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#f9f9f9',GradientType=0);
+	background-color:#e9e9e9;
+}
+
+li a.button:active, p.otherLinks a
+{
+	position:relative;
+	top:1px;
+}
+
+/*Other links*/
+p.otherLinks a
+{
+    size: 1em;
+    display: block;
+    margin-top: .5em;
+    max-width: 30%;
+    text-decoration: none;
+}
+
+/*Styling for the form on the fan mail page*/
+form
+{
+    display: flex;
+    justify-content: right;
+    flex-flow: column;
+    padding-left: 5%;
+}
+
+input, textarea
+{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    margin: 1em;
+}
+
+textarea
+{
+    height: 5em;
+}
+
+input[name=comment]
+{
+    height: 5em;
+}
+
+input[type=submit], input[type=reset]
+{
+    width: 30%;
+    cursor: pointer;
+    float: right;
+}
+
+label
+{
+    display: inline-block;
+    margin-top: 1em;
+    font-size: 1.5em;
+}
